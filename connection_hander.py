@@ -13,7 +13,6 @@ class ConnectionHandler:
         cursor = self.conn.cursor()
         cursor.execute(query)
         rows = cursor.fetchall()
-        id_list = [row[0] for row in rows]
-        return id_list
+        return rows
 
 db_connection = ConnectionHandler()
