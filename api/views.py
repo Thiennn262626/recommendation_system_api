@@ -9,8 +9,8 @@ blueprint = Blueprint('api', __name__, url_prefix='/api')
 api = Api(blueprint, errors=blueprint.errorhandler)
 
 api.add_resource(Training, '/training')
-api.add_resource(RecommendByUser, '/recommend-by-user')
-api.add_resource(RecommendByProduct, '/recommend-by-product')
+# api.add_resource(RecommendByUser, '/recommend-by-user')
+# api.add_resource(RecommendByProduct, '/recommend-by-product')
 
 
 
